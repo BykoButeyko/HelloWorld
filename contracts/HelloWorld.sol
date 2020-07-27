@@ -1,13 +1,13 @@
 pragma solidity 0.5.12;
 
 contract HelloWorld {
-    string message = "Hello World!";
+    string message = "Hello Maki!";
 
     function getMessage() public view returns(string memory){
         return message;
     }
     function setMessage(string memory newMessage) public payable {
-        require(msg.value >= 1 ether);
+        //require(msg.value >= 1 ether);
         message = newMessage;
     }
 }
